@@ -1,3 +1,3 @@
-# blabladev-calculator
+# blablaDev Calculator
 
 Calculator using javascript.
