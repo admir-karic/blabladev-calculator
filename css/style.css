@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'Digit';
+    src: url('../fonts/Digit.TTF');
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../fonts/Roboto-Bold.ttf');
+}
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+.calculator {
+    margin: 0px auto;
+    width: 250px;
+    border-top: 15px solid #2a2a2f;
+    background-color: #5a5d70;
+    padding-bottom:5px;
+}
+
+.display {
+    height: 168px;
+    width: 100%;
+    background-color: #7aab8b;
+    margin-bottom: 5px;
+}
+
+.displayposition {
+    height: 55px;
+    text-align: right;
+    font-family: Digit;
+    font-size: 40px;
+    padding-right: 15px;
+}
+.displayposition:last-child{
+    margin-top:2px;
+}
+.row{
+    width:100%;
+}
+
+.row span{
+    display:inline-block;
+    height:55px;
+    width:55px;
+    color:#efefef;
+    font-family:Roboto-Bold;
+    text-align:center;
+    font-size:25px;
+    line-height:48px;
+    vertical-align:middle;
+    margin:2px auto;
+    padding:0px;
+    border-radius:2px;
+    box-shadow: 0px 0px 20px #262728;
+}
+
+i{
+    position:relative;
+    top:6px;
+}
+
+.number {
+    background-color: #8b8d9c;
+}
+
+.operation {
+    background-color: #2a2a2f;
+}
+
+.row:last-child span:first-child {
+    width: 114px;
+}
+
+.row span:first-child{
+    margin-left:10px;
+}
+
+.backspace{
+    background-color:#c33643;
+}
+
+.equal {
+    position: relative;
+    float: right;
+    height: 114px;
+    width: 55px;
+    margin-right: 8px;
+    top: -57px;
+    background-color: #2a2a2f;
+    line-height: 113px;
+    text-align: center;
+    color: #efefef;
+    border-radius: 2px;
+    font-family: Roboto-Bold;
+}
+
+.equal:hover {
+    background-color: rgb(122,204,200)
+}
+
+.row span:hover {
+    background-color: rgb(122,204,200);
+}
+
+.line {
+    display:none;
+    float:right;
+    margin-right:10px;
+    height: 2px;
+    width: 50%;
+    background-color: #2a2a2f;
+}
